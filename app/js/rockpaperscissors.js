@@ -21,11 +21,23 @@ function randomPlay() {
 /*           Write Your Code Below            */
 ////////////////////////////////////////////////
 
+var move = randomNumber;
+
+
+
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
+    if(move)
+    {
+        return move;
+    }
+    else
+    {
+        return getInput();
+    }
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
+    return  move/* Your Expression */;
 }
 
 function getComputerMove(move) {
